@@ -1,21 +1,35 @@
 @charset "UTF-8";
 
-body {
-    background-image: linear-gradient(to top right, #E34C75 , #8B30D4);
+html {
+    overflow-x: hidden;
 
+}
+
+body {
+    background: url(../imagens/capa.png), url(../imagens/ruido.png), linear-gradient(50deg, #ff4169,#7c26f8);
+    background-attachment: fixed;
+    font-family: helvetica, sans-serif;
 }
 
 
 header {
-    background-color: rgba(0, 0, 0, 0.575);
+    background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
-    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    padding: 7px 0px;
 }
+
+.navbar-toggler {
+    border: 1px solid white;
+}
+
+/* Carroseul */
 
 main {
     height: 100vh;
-    background-image: url(../imagens/capa.png);
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,14 +47,48 @@ main {
 
 #slide2 button#first:hover {
     background-color: #6c2ba1;
-    
-   /*  border-color: #8B30D4; */
     color: white;
 }
 
-
-.conteudo {
-    height: 300px;
-    background-color: #fff;
+#slide1 h1, #slide2 h1 {
+    font-weight: 900;
 }
 
+/* Conteudo */
+
+.conteudo {
+    padding: 30px 10px;
+    background-color: #fff;
+
+}
+
+.conteudo h1, h3 {
+    color: #7C25F8;
+    font-weight: 700;
+}
+
+.albuns {
+    margin-bottom: 25px;
+}
+
+.conteudo2 {
+    color: white;
+    padding: 10px;
+}
+
+.conteudo2 h1 {
+    font-weight: 700;
+}
+
+.conteudo2 h2 {
+    color: #9BF0E1;
+    font-weight: 700;
+}
+
+.conteudo2 div.iphones {
+    transform: rotate(30deg);
+}
+
+.conteudo2 div.iphones .iphone_3 {
+    display: none;
+}
