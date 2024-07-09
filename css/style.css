@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to top right, #E34C75 , #8B30D4);
+
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.575);
+    position: fixed;
+    width: 100%;
+}
+
+main {
+    height: 100vh;
+    background-image: url(../imagens/capa.png);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#slide1 button, 
+#slide2 button {
+    border-radius: 30px 30px 30px 30px;
+    
+}
+#slide2 button#first {
+    background-color: #8B30D4;
+    color: white;
+}
+
+#slide2 button#first:hover {
+    background-color: #6c2ba1;
+    
+   /*  border-color: #8B30D4; */
+    color: white;
+}
+
+
+.conteudo {
+    height: 300px;
+    background-color: #fff;
+}
+
