@@ -1,9 +1,8 @@
 @charset "UTF-8";
 
-html, body{
-    height: 100vh;
+html, body {
     overflow-x: hidden;
-    
+    height: 100vh;
 }
 
 body {
@@ -53,6 +52,7 @@ main {
 
 #slide1 h1, #slide2 h1 {
     font-weight: 900;
+    
 }
 
 /* Conteudo */
@@ -69,6 +69,8 @@ main {
 }
 
 .albuns {
+    width: 97%;
+    margin: auto;
     margin-bottom: 25px;
 }
 
@@ -92,4 +94,51 @@ main {
 
 .conteudo2 div.iphones .iphone_3 {
     display: none;
+}
+
+/* Rodapé */
+footer {
+    background-color: black;
+}
+
+footer a {
+    color: white;
+    font-size: 0.8em;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer h6 {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+footer a:hover {
+    color: #9BF0E1;
+    text-decoration: none;
+}
+
+.redes {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+@media screen and (min-width: 576px){
+    #slide1 h1, #slide2 h1 {
+        font-size: 2.5em;
+    }
+
+    
+    .albuns {
+        max-width: 510px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
 }
