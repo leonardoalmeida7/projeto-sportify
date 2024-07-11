@@ -19,11 +19,15 @@ header {
     right: 0;
     top: 0;
     z-index: 1;
-    padding: 7px 0px;
+    padding: 12px;
 }
 
 .navbar-toggler {
     border: 1px solid white;
+}
+
+#barra-vertical {
+    display: none;
 }
 
 /* Carroseul */
@@ -68,6 +72,14 @@ main {
     font-weight: 700;
 }
 
+.conteudo h1 {
+    font-size: 2.8em;
+}
+
+.conteudo h3 {
+    font-size: 2em;
+}
+
 .albuns {
     width: 97%;
     margin: auto;
@@ -81,6 +93,7 @@ main {
 
 .conteudo2 h1 {
     font-weight: 700;
+    font-size: 3em;
 }
 
 .conteudo2 h2 {
@@ -99,6 +112,9 @@ main {
 /* Rodapé */
 footer {
     background-color: black;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
 }
 
 footer a {
@@ -128,7 +144,8 @@ footer a:hover {
     clear: both;
 }
 
-@media screen and (min-width: 576px){
+@media screen and (min-width: 540px){
+
     #slide1 h1, #slide2 h1 {
         font-size: 2.5em;
     }
@@ -140,5 +157,161 @@ footer a:hover {
 }
 
 @media screen and (min-width: 768px) {
+    header div.conteiner {
+        max-width: 780px;
+        margin: auto;
+    }
+
+    header nav.bug {
+        display: grid;
+        grid-template-columns: 30% 60%;
+        column-gap: 20%;
+    }
     
+
+    #carrosel {
+        font-size: 1.5em;
+    }
+    #carrosel button {
+        font-size: 0.85em;
+    }
+
+    .espacamento {
+        display: none;
+    }
+
+    #barra-vertical {
+        display: inline;
+    }
+    
+    section.conteudo > div {
+        display: grid;
+        grid-template-columns: 25% 25% 50%;
+        max-width: 780px;
+        padding: 30px 30px 0px 30px;
+        margin: auto;
+    }
+    
+    .albuns {
+        margin-top: 0;
+    }
+
+    .conteudo .albuns img {
+        margin-bottom: 20px;
+        width: 85%;
+    }
+
+    .conteudo {
+        padding: 0px;
+    }
+
+    .conteudo2 {
+        max-width: 780px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 30% 60%;
+        column-gap: 10%;
+        padding: 30px;
+    }
+    
+    .conteudo2 div.iphones img{
+        width: 42%;
+        float: left;
+        margin-right: 30px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+    }
+}
+
+@media screen and (min-width: 994px){
+    header nav.bug {
+        display: grid;
+        grid-template-columns: 30% 60%;
+        column-gap: 30%;
+    }
+    
+    header div.conteiner {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    section.conteudo {
+        padding: 30px 10px 0px 10px;
+    }
+
+    section.conteudo > div {
+        display: grid;
+        grid-template-columns: 25% 25% 50%;
+        max-width: 996px;
+        padding: 0px 30px;
+        margin: auto;
+        
+    }
+    .albuns {
+        width: 105%;
+        
+    }
+
+    .conteudo2 {
+        max-width: 996px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 30% 60%;
+        column-gap: 14%;
+        padding: 30px;
+    }
+
+    .conteudo2 div.iphones img{
+        width: 42%;
+        float: left;
+        margin-right: 30px;
+    }
+
+}
+@media screen and (min-width: 1200px) {
+    header nav.bug {
+        display: grid;
+        grid-template-columns: 30% 60%;
+        column-gap: 40%;
+    }
+
+    header div.conteiner{
+       max-width: 1150px;
+       margin: auto;
+    }
+
+    #carrosel {
+        font-size: 2em;
+    }
+    #carrosel button {
+        font-size: 1em;
+    }
+
+    section.conteudo > div {
+        display: grid;
+        grid-template-columns: 25% 25% 50%;
+        max-width: 1150px;
+        padding: 0px 30px;
+        margin: auto;
+        
+    }
+
+    .conteudo2 {
+        max-width: 1150px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 30% 65%;
+        column-gap: 10%;
+        padding: 30px;
+    }
+
+    .conteudo2 div.iphones img{
+        width: 45%;
+        float: left;
+        margin-right: 30px;
+    }
+
 }

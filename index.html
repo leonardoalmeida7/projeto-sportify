@@ -11,9 +11,6 @@
     <!-- Icones Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <!-- CSS Media Query-->
-    <link rel="stylesheet" href="css/mediaquery.css">
-
     <!-- CSS -->
      <link rel="stylesheet" href="css/style.css">
 
@@ -23,20 +20,19 @@
     <header>
         <!-- Resposivo com bootstrap -->
         <div class="conteiner">
-            <nav class="navbar navbar-expand-md">
-                <div>
-                    <a class="navbar-brand" href="#">
-                        <img style="width: 150px;" src="imagens/spotify.svg" alt="Sportify">
-                    </a>
-                </div>
+            <nav class="navbar navbar-expand-md bug">
+                <a class="navbar-brand" href="#">
+                    <img style="width: 150px;" src="imagens/spotify.svg" alt="Sportify">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
                         <i class="fas fa-bars text-white"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
+                  <div class="navbar-nav ">
                     <a class="nav-item nav-link  text-light" href="#">Premium <span class="sr-only">(Página atual)</span></a>
                     <a class="nav-item nav-link text-light" href="#">Ajuda</a>
                     <a class="nav-item nav-link text-light" href="#">Baixar</a>
+                    <p class="text-light m-2 d" id="barra-vertical">|</p>
                     <br>
                     <a class="nav-item nav-link text-light" href="#">Inscreva-se</a>
                     <a class="nav-item nav-link text-light" href="#">Entrar</a>
@@ -48,7 +44,7 @@
     <main>
         <!-- Carrosel -->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner text-center">
+            <div class="carousel-inner text-center" id="carrosel">
                 <!-- Primeiro slide -->
                 <div class="carousel-item active" id="slide1">
                     <h1 class="text-light">As melhores rádios</h1>
@@ -64,8 +60,9 @@
                     <button type="button" class="btn px-3 py-2" id="first">
                         APROVEITE O SPORTIFY FREE
                     </button>
-                    <br>
-                    <br>
+                    <div class="espacamento">
+                        <br>
+                    </div>
                     <button type="button" class="btn btn-outline-light px-3 py-2">
                         OBTER SPORTIFY PREMIUM
                     </button>
@@ -82,27 +79,31 @@
         </div>
     </main>
     <section class="conteudo">
-        <div class="albuns">
-            <img src="imagens/img1.jpg" width="100%" alt="justin">
-            <img src="imagens/img2.jpg" width="100%" alt="imagem2">
+        <div>
+            <div class="albuns">
+                <img src="imagens/img1.jpg" width="100%" alt="justin">
+                <img src="imagens/img2.jpg" width="100%" alt="imagem2">
+            </div>
+            <div class="albuns">
+                <img src="imagens/img3.jpg" width="100%" alt="imagem3">
+                <img src="imagens/img4.jpg" width="100%" alt="imagem4">
+            </div>
+            <div>
+                <h1>O que o Spotify tem?</h1>
+                <h3>Músicas</h3>
+                <p>
+                    O Spotify tem milhões de músicas. Escute seus sons favoritos, descubra novas músicas e reúna seus favoritos em um só lugar.
+                </p>
+                <h3>Playlists</h3>
+                <p>
+                    No Spotify você encontra uma playlist para cada momento. Todas feitas por fanáticos e especialistas da música.
+                </p>
+                <h3>Novos lançamentos</h3>
+                <p>
+                    Escute os novos lançamentos de singles e álbuns da semana e veja o que está bombando no Top 50.
+                </p>
+            </div>
         </div>
-        <div class="albuns">
-            <img src="imagens/img3.jpg" width="100%" alt="imagem3">
-            <img src="imagens/img4.jpg" width="100%" alt="imagem4">
-        </div>
-        <h1>O que o Sportify tem?</h1>
-        <h3>Músicas</h3>
-        <p>
-            O Spotify tem milhões de músicas. Escute seus sons favoritos, descubra novas músicas e reúna seus favoritos em um só lugar.
-        </p>
-        <h3>Playlists</h3>
-        <p>
-            No Spotify você encontra uma playlist para cada momento. Todas feitas por fanáticos e especialistas da música.
-        </p>
-        <h3>Novos lançamentos</h3>
-        <p>
-            Escute os novos lançamentos de singles e álbuns da semana e veja o que está bombando no Top 50.
-        </p>
     </section>
     <section class="conteudo2">
         <div>
@@ -121,12 +122,12 @@
             </p>
         </div>
         <div class="iphones">
-            <img src="imagens/iphone1.png" alt="iphone">
-            <img src="imagens/iphone2.png" alt="Iphone">
+            <div><img src="imagens/iphone1.png" alt="iphone"></div>
+            <div><img src="imagens/iphone2.png" alt="Iphone"></div>
             <div class="iphone_3"><img src="imagens/iphone3.png" alt="Iphone"></div>
         </div>
     </section>
-    <footer class="p-3">
+    <footer class="p-xl-5 p-3">
         <img  class="mb-2" src="imagens/spotify.svg" alt="logo" width="150px">
         <div>
             <h6 class="text-white-50">COMPANY</h6>
